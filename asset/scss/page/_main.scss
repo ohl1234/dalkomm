@@ -2,7 +2,21 @@
     position: relative;
     height:60vw;
     overflow: hidden;
+    // background-color: #eb5b29;
     background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(224,219,214,1) 98%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #eb5b29;
+        opacity: 0.5;
+    }
     .slogan{
         position: absolute;
         top: 6vw;
@@ -15,11 +29,11 @@
     }
     .ani-area{
         position: absolute;
-        top: 7vw;
+        top: 10vw;
         left: 50vw;
         transform: translateX(-50%);
         z-index: 3;
-        width: 80vw;
+        width: 20vw;
     }
     .thumb-area{
         position: absolute;
@@ -28,7 +42,7 @@
         z-index: 10;
         padding-bottom: 50%;
         width: 100%;
-        background-image: url(../images/main-visual.png);
+        background-image: url(../images/main-visual.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center bottom;
@@ -37,9 +51,6 @@
 
 .sc-about{
     padding: 110px 40px;
-    background-image: url(../images/about-bg.png);
-    background-repeat: no-repeat;
-    background-position: top top;
     .group-title{
         display: flex;
         margin-bottom: 110px;
@@ -75,20 +86,21 @@
         .thumb-box{
             margin-top: 20px;
             padding-bottom: 50%;
-            background-image: url(../images/about-thumb1.jpg);
+            background-image: url(../images/about-thumb1.jpeg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100%;
         }
     }
-    .group-map{
+    .group-vision{
         height: 40vw;
-        background-image: url(../images/about-map.svg);
+        background-image: url(../images/about-bg2.png);
         background-repeat: no-repeat;
-        background-position: top right;
+        background-position: center right;
+        background-size: 40vw;
         background-color: $color-beige3;
         
     }
-    .map-area{
+    .vision-area{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -98,7 +110,7 @@
             display: flex;
             flex-direction: column;
         }
-        .map-txt{
+        .vision-txt{
             font-weight: 300;
             font-size: 1.6vw;
             line-height: 1.55;
@@ -229,7 +241,6 @@
             width: 18vw;
             height: 20vw;
             background-color: $color-beige1;
-            background-image: url(../images/apartments-layout1.svg);
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center center;
@@ -242,16 +253,28 @@
             transform: translateY(-40%);
             margin-right: 20px;
             .rolling-item{
+                &:nth-of-type(1){
+                    background-image: url(../images/coffee-thumb1.png);
+                }
                 &:nth-of-type(2){
                     opacity: 1;
+                    background-image: url(../images/coffee-thumb2.png);
+                }
+                &:nth-of-type(3){
+                    background-image: url(../images/coffee-thumb3.png);
                 }
             }
         }
         .wrap2{
             .rolling-item{
-                background-image: url(../images/apartments-layout2.svg);
+                &:nth-of-type(1){
+                    background-image: url(../images/coffee-thumb4.png);
+                }
                 &:nth-of-type(2){
-                    margin: 20px 0;
+                    background-image: url(../images/coffee-thumb5.png);margin: 20px 0;
+                }
+                &:nth-of-type(3){
+                    background-image: url(../images/coffee-thumb6.png);
                 }
             }
         }
@@ -295,11 +318,15 @@
             justify-content: space-between;
             width: 74.516%;
             padding: 0 30px;
-            background-color: $color-beige1;
             border-left: 1px solid $color-gray2;
         }
         .txt-tit{
             font-size: 2.5vw;
+            span {
+                display: inline-block;
+                margin-left: 40px;
+                font-size: 2vw;
+            }
         }
         .desc{
             font-weight: 300;
@@ -363,8 +390,9 @@
         position: relative;
         width: 37vw;
         height: 44vw;
-        background-image: url(../images/benefits-thumb7.jpg);
+        background-image: url(../images/mdpick-thumb1.png);
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         &::after{
             content: '';
@@ -379,7 +407,7 @@
         }
         &:last-of-type{
             margin-top: 50px;
-            background-image: url(../images/benefits-thumb8.jpg);
+            background-image: url(../images/mdpick-thumb2.png);
         }
         .txt-box{
             position: absolute;
@@ -424,6 +452,7 @@
                 width: 100%;
                 height: 100%;
                 opacity: 0;
+                background-color: #e4dccb;
                 &.active{
                     opacity: 1;
                     transition: all 0.8s;
@@ -447,7 +476,7 @@
             img{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
         .column-right{
@@ -570,7 +599,7 @@
                 width: 40px;
                 height: 40px;
                 margin-right: 20px;
-                background-image: url(../images/metro.svg);
+                background-image: url(../images/ic-coffee.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center center;
@@ -612,8 +641,6 @@
             border-right: 1px solid $color-gray2;
         }
         .location-item{
-            display: flex;
-            justify-content: space-between;
             & + li{
                 margin-top: 30px;
             }
@@ -622,8 +649,11 @@
                 padding-top: 50%;
             }
         }
+        .location-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
         .txt-box{
-            display: block;
             width: 60%;
         }
         .info{
@@ -640,9 +670,9 @@
             font-size: 1.2vw;
             opacity: 0.8;
         }
-        .time{
+        .locate{
             margin-top: 30px;
-            font-size: 1.3vw;
+            font-size: 1.1vw;
             i{
                 display: inline-block;
                 vertical-align: middle;
@@ -653,26 +683,23 @@
                 background-size: contain;
             }
         }
-        .ic-walk{
-            background-image: url(../images/walk.svg);
-        }
-        .ic-car{
-            background-image: url(../images/car.svg);
+        .ic-locate{
+            background-image: url(../images/location.svg);
         }
         .thumb-box{
             width: 17vw;
             height: 17vh;
-            background-image: url(../images/location-thumb1.jpg);
+            background-image: url(../images/location-bg1.png);
             background-repeat: no-repeat;
             background-size: cover;
             &.thumb2{
-                background-image: url(../images/location-thumb2.jpg);
+                background-image: url(../images/location-bg2.png);
             }
             &.thumb3{
-                background-image: url(../images/location-thumb3.jpg);
+                background-image: url(../images/location-bg3.png);
             }
             &.thumb4{
-                background-image: url(../images/location-thumb4.jpg);
+                background-image: url(../images/location-bg4.png);
             }
         }
         .map-box{

@@ -1,4 +1,7 @@
 $(function(){
+    document.cookie = "safeCookie1=foo; SameSite=Lax"; 
+    document.cookie = "safeCookie2=foo"; 
+    document.cookie = "crossCookie=bar; SameSite=None; Secure";
     /**
      *  1. header event
      *  1-1. 스크롤 시 sticky header
@@ -78,7 +81,7 @@ $(function(){
      *  2-10 .sc-location map
      */
 
-    gsap.to('.ani-area',1,{
+    gsap.to('.sc-visual .ani-area',1,{
         scale:1.1,
         repeat:-1, //음수는 무한
         yoyo:true,
@@ -92,7 +95,7 @@ $(function(){
             end:"bottom top",
             scrub:1,
         },
-        scale:1.15
+        scale:1.12
     });
 
     $('[data-fade]').each(function(i,el){
@@ -224,7 +227,7 @@ $(function(){
         $('.sc-season .thumb-box').siblings().removeClass('active').eq(idx).addClass('active')
     })
 
-    $('.sc-location .txt-box').click(function(e){
+    $('.sc-location .location-wrap').click(function(e){
         e.preventDefault();
         target = $(this).data('target');
 

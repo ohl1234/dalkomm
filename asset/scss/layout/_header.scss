@@ -32,6 +32,9 @@
         -webkit-box-shadow: 0px 10px 10px -7px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 10px 10px -7px rgba(0,0,0,0.2);
         box-shadow: 0px 10px 10px -7px rgba(0,0,0,0.2);
+        .logo-area{
+            opacity: 1;
+        }
     }
 }
 
@@ -58,31 +61,17 @@
     .thumb-box{
         position: relative;
     }
-    .thumb1,.thumb2{
-        @include position-Center;
-    }
     .thumb1{
+        @include position-Center;
         width: 29vw;
         height: 29vw;
-        background-image: url(../images/gnb-thumb1.svg);
+        background-image: url(../images/nav-thumb.png);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         border-color: transparent;
         border-style: solid;
         z-index: 4;
-    }
-    .thumb2{
-        width: 17vw;
-        height: 20vw;
-        background-image: url(../images/gnb-thumb2.jpg);
-        background-repeat: no-repeat;
-        border-radius: 4000px;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-color: transparent;
-        border-style: solid;
     }
     .gnb-box{
         padding-left:10px;
