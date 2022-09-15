@@ -1,0 +1,32 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    margin: -1px;
+}
+section{
+    width: 100%;
+    & + section{
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+// @include laptop1{
+//     .header{
+//         & *{
+//             zoom: 1 !important;
+//         }
+//     }
+//     .container{
+//         & *{
+//             zoom: 1 !important;
+//         }
+//     }
+//     .footer{
+//         & *{
+//             zoom: 1 !important;
+//         }
+//     }
+// }

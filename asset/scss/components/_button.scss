@@ -1,0 +1,229 @@
+.header{
+    .right-area{
+        .btn-requset{
+            @include btn3;
+            width: 12vw;
+            height: 3vw;
+            font-size: 1vw;
+            font-weight: 500;
+            transition: all 0.3s;
+            &:hover{
+                background-color: $color-gray3;
+            }
+        }
+    }
+}
+.header{
+    &.active{
+        .btn-requset{
+            @include btn1;
+            &:hover{
+                background-color: $color-brown4;
+            }
+        }
+        .menu-bar{
+            background-color: $color-txt;
+        }
+        
+    }
+}
+.gnb-header{
+    .right-area{
+        .btn-requset{
+            width: 12vw;
+            height: 3vw;
+            font-size: 1vw;
+            font-weight: 500;
+            background-color: $color-brown;
+            color: $color-white;
+            &:hover{
+                background-color: $color-brown4;
+            }
+        }
+    }
+}
+.btn-menu,.btn-close{
+    display: inline-block;
+    height: 32px;
+}
+.bar-wrap{
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+    vertical-align:middle;
+}
+.menu-bar{
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: $color-white;
+    &:nth-child(1){
+        margin-bottom: 5px;
+    }
+}
+.gnb-area{
+    .btn-close{
+        .bar-wrap{
+            height: 15px;
+            margin-right: 3px;
+            vertical-align: middle;
+        }
+        i{
+            display: inline-block;
+            width:2px;
+            height: 15px;
+            background-color: $color-txt;
+            &:nth-child(1){
+                margin-bottom: 0;
+            }
+        }
+    }
+    .btn-requset{
+        background-color: $color-txt;
+        color: $color-white;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-brown4;
+        }
+    }
+}
+.requset-area{
+    .btn-close{
+        position: absolute;
+        top: 0.5vw;
+        right: 0.5vw;
+        cursor: pointer;
+        z-index: 999999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        transform: scale(1.2);
+        .close-wrap{
+            position: relative;
+            width: 24px;
+            height: 20px;
+        }
+        .close-bar{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $color-dark;
+            opacity: 1;
+            &:nth-of-type(1){
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:last-of-type{
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .btn-send{
+        width: 100%;
+        height: 3vw;
+        margin-top: 50px;
+        padding: 0 15px;
+        font-size: 1.2vw;
+        border-radius: 30px;
+        transition: all 0.3s;
+        @include btn1;
+        &:hover{
+            background-color: $color-brown4;
+        }
+    }
+}
+.input-area{
+    .btn-send{
+        position: absolute;
+        bottom: 0.5vw;
+        right: 0;
+        display: block;
+        width: 13vw;
+        height: 3vw;
+        padding: 0 15px;
+        font-size: 1vw;
+        color: $color-white;
+        background-color: $color-txt;
+        border-radius: 30px;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-brown4;
+        }
+    }
+}
+.sc-coffee{
+    .link-more{
+        @include btn1;
+        width: 15vw;
+        height: 3vw;
+        font-size: 1.2vw;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-brown4;
+        }
+    }
+}
+.sc-mdpick{
+    .link-btn{
+        @include btn2;
+        width: 15vw;
+        height: 3vw;
+        margin-top: 20px;
+        font-size: 1.2vw;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-gray3;
+        }
+    }
+}
+.slide3{
+    .link-btn{    
+        position: absolute;
+        bottom: 2vw;
+        left: 2vw;
+        @include btn1;
+        width: 13vw;
+        height: 3vw;
+        font-size: 1vw;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-brown4;
+        }
+    }
+}
+.contact-area{
+    .btn-send{
+        @include btn1;
+        align-self: flex-start;
+        width: 100%;
+        height: 3.5vw;
+        margin-top: 8vw;
+        font-size: 1.1vw;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-brown4;
+        }
+    }
+}
+
+.footer{
+    .btn-requset{
+        @include btn1;
+        display: inline-block;
+        width: 13vw;
+        height: 3.5vw;
+        margin-top: 30px;
+        font-size: 1.2vw;
+    }
+}

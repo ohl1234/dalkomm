@@ -1,0 +1,68 @@
+@mixin ellip($line-height,$lines) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @if($lines > 1){
+        line-height: $line-height;
+        max-height: $line-height * $lines;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical; /* autoprefixer: off */
+    }@else{
+        white-space: nowrap;
+    }
+}
+
+@mixin position-Center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flag-Img {
+    background-image: url(../images/sc-flag-bg.png);
+    background-repeat: no-repeat;
+}
+
+@mixin btn1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    line-height: 1.55;
+    border-radius: 30px;
+    background-color: $color-brown;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+@mixin btn2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-blue;
+    line-height: 1.55;
+    border-radius: 30px;
+    background-color: $color-white;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+@mixin btn3 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-blue;
+    border-radius: 30px;
+    background-color: $color-beige2;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition-delay: 0.2s;
+    transition-duration: 3s;
+}
+
