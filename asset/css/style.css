@@ -1386,15 +1386,22 @@ section + section {
   justify-content: space-between;
   width: 74.516%;
   padding: 0 30px;
+  background-color: #fbf4e4;
   border-left: 1px solid #c6c0ba;
 }
 .sc-signature .slide2 .txt-tit {
-  font-size: 2.5vw;
+  font-size: 2.2vw;
 }
 .sc-signature .slide2 .txt-tit span {
   display: inline-block;
-  margin-left: 40px;
-  font-size: 2vw;
+  width: 5vw;
+  vertical-align: 2px;
+  text-align: center;
+  font-size: 1.7vw;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #eb5b29;
+  color: #fff;
 }
 .sc-signature .slide2 .desc {
   font-weight: 300;
