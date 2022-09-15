@@ -75,6 +75,7 @@ $(function(){
      *  2-7. ic-plus hover 이벤트
      *  2-8. .sc-global .btn-tab 이벤트
      *  2-9. .sc-season hover 이벤트
+     *  2-10 .sc-location map
      */
 
     gsap.to('.ani-area',1,{
@@ -223,6 +224,12 @@ $(function(){
         $('.sc-season .thumb-box').siblings().removeClass('active').eq(idx).addClass('active')
     })
 
+    $('.sc-location .txt-box').click(function(e){
+        e.preventDefault();
+        target = $(this).data('target');
+
+        $('[data-id='+target+']').addClass('active').siblings().removeClass('active')
+    })
 
     /**
      *  3. swiper-slide event
