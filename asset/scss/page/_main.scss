@@ -1039,68 +1039,62 @@
             padding-bottom: 50%;
             margin-top: 30px;
             background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center center;
+            background-size: 80%;
+            background-color: $color-gray4;
             &.active{
                 display: block;
             }
         }
         .global1 {
             z-index: 3;
-            background-image: url(../images/project-bg.jpg);
+            background-image: url(../images/global-bg1.png);
+            background-position: center;
+            .info1{
+                top: 24vw;
+                left: 37vw;
+                z-index: 6;
+            }
+            .info2{
+                top: 26vw;
+                left: 42vw;
+                z-index: 5;
+            }
+            .info3{
+                top: 16vw;
+                left: 67vw;
+                z-index: 4;
+            }
+            .info4{
+                top: 23vw;
+                left: 45vw;
+                z-index: 4;
+            }
         }
         .global2 {
             z-index: 4;
+            background-image: url(../images/global-bg2.png);
+            .info1{
+                top: 16vw;
+                left: 40vw;
+                z-index: 6;
+            }
+            .info2{
+                top: 26vw;
+                left: 33vw;
+                z-index: 5;
+            }
+            .info3{
+                top: 7vw;
+                left: 49vw;
+                z-index: 4;
+            }
         }
         .info-wrap{
             position: absolute;
             background-repeat: no-repeat;
             background-size: cover;
-        }
-        .info1{
-            width: 18vw;
-            height: 20vw;
-            top: 18vw;
-            left: 5vw;
-            z-index: 5;
-            .info-hover{
-                &::after{
-                    transition: all 0.5s;
-                    background-image: url(../images/project-dim1.svg);
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                }
-            }
-        }
-        .info2{
-            width: 13vw;
-            height: 10vw;
-            top: 29.5vw;
-            left: 22vw;
-            z-index: 4;
-            .info-hover{
-                &::after{
-                    transition: all 0.5s;
-                    background-image: url(../images/project-dim2.svg);
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                }
-            }
-        }
-        .info3{
-            width: 17vw;
-            height: 19vw;
-            top: 25vw;
-            left: 36vw;
-            z-index: 4;
-            .info-hover{
-                &::after{
-                    transition: all 0.5s;
-                    background-image: url(../images/project-dim2.svg);
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                }
-            }
+            width: 5vw;
+            height: 5vw;
         }
         .info-hover{
             @include position-Center;
@@ -1111,14 +1105,13 @@
                 position: absolute;
                 top:0;
                 left: 0;
-                display: inline-block;
+                display: none;
                 width: 100%;
                 height: 100%;
-                opacity: 0;
             }
             &.active{
                 &::after{
-                    opacity: 1;
+                    display: inline-block;
                 }
             }
         }    
@@ -1126,9 +1119,8 @@
             @include position-Center;
             z-index: 1;
             display: inline-block;
-            width: 36px;
-            height: 36px;
-            background-color: $color-brown1;
+            width: 26px;
+            height: 26px;
             border-radius: 30px;
             cursor: pointer;
         }
@@ -1139,8 +1131,8 @@
             transform: translateY(-50%);
             z-index: 10;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
             width: 200px;
             padding: 15px;
             background-color: $color-white;
@@ -1150,6 +1142,19 @@
             &.active{
                 visibility: visible;
             }
+            & > * {
+                display: block;
+            }
+        }
+        .info-tit {
+            font-family: $font-kn2;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: $color-txt;
+        }
+        .info-addr {
+            font-family: $font-en1;
+            color: $color-gray5;
         }
     }
 }

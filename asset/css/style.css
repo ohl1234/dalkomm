@@ -2106,8 +2106,8 @@ section + section {
   padding-bottom: 50%;
   margin-top: 30px;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
+  background-size: 80%;
+  background-color: #eee;
 }
 .sc-global .group-tab .global1.active,
 .sc-global .group-tab .global2.active {
@@ -2115,54 +2115,54 @@ section + section {
 }
 .sc-global .group-tab .global1 {
   z-index: 3;
-  background-image: url(../images/project-bg.jpg);
+  background-image: url(../images/global-bg1.png);
+  background-position: center;
+}
+.sc-global .group-tab .global1 .info1 {
+  top: 24vw;
+  left: 37vw;
+  z-index: 6;
+}
+.sc-global .group-tab .global1 .info2 {
+  top: 26vw;
+  left: 42vw;
+  z-index: 5;
+}
+.sc-global .group-tab .global1 .info3 {
+  top: 16vw;
+  left: 67vw;
+  z-index: 4;
+}
+.sc-global .group-tab .global1 .info4 {
+  top: 23vw;
+  left: 45vw;
+  z-index: 4;
 }
 .sc-global .group-tab .global2 {
+  z-index: 4;
+  background-image: url(../images/global-bg2.png);
+}
+.sc-global .group-tab .global2 .info1 {
+  top: 16vw;
+  left: 40vw;
+  z-index: 6;
+}
+.sc-global .group-tab .global2 .info2 {
+  top: 26vw;
+  left: 33vw;
+  z-index: 5;
+}
+.sc-global .group-tab .global2 .info3 {
+  top: 7vw;
+  left: 49vw;
   z-index: 4;
 }
 .sc-global .group-tab .info-wrap {
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.sc-global .group-tab .info1 {
-  width: 18vw;
-  height: 20vw;
-  top: 18vw;
-  left: 5vw;
-  z-index: 5;
-}
-.sc-global .group-tab .info1 .info-hover::after {
-  transition: all 0.5s;
-  background-image: url(../images/project-dim1.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.sc-global .group-tab .info2 {
-  width: 13vw;
-  height: 10vw;
-  top: 29.5vw;
-  left: 22vw;
-  z-index: 4;
-}
-.sc-global .group-tab .info2 .info-hover::after {
-  transition: all 0.5s;
-  background-image: url(../images/project-dim2.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.sc-global .group-tab .info3 {
-  width: 17vw;
-  height: 19vw;
-  top: 25vw;
-  left: 36vw;
-  z-index: 4;
-}
-.sc-global .group-tab .info3 .info-hover::after {
-  transition: all 0.5s;
-  background-image: url(../images/project-dim2.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  width: 5vw;
+  height: 5vw;
 }
 .sc-global .group-tab .info-hover {
   position: absolute;
@@ -2177,13 +2177,12 @@ section + section {
   position: absolute;
   top: 0;
   left: 0;
-  display: inline-block;
+  display: none;
   width: 100%;
   height: 100%;
-  opacity: 0;
 }
 .sc-global .group-tab .info-hover.active::after {
-  opacity: 1;
+  display: inline-block;
 }
 .sc-global .group-tab .ic-plus {
   position: absolute;
@@ -2192,9 +2191,8 @@ section + section {
   transform: translate(-50%, -50%);
   z-index: 1;
   display: inline-block;
-  width: 36px;
-  height: 36px;
-  background-color: #605348;
+  width: 26px;
+  height: 26px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -2205,8 +2203,8 @@ section + section {
   transform: translateY(-50%);
   z-index: 10;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 200px;
   padding: 15px;
   background-color: #fff;
@@ -2216,6 +2214,19 @@ section + section {
 }
 .sc-global .group-tab .info-box.active {
   visibility: visible;
+}
+.sc-global .group-tab .info-box > * {
+  display: block;
+}
+.sc-global .group-tab .info-tit {
+  font-family: "NEXONLv1GothicRegular", sans-serif;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #222;
+}
+.sc-global .group-tab .info-addr {
+  font-family: "Goldplay-SemiBold", sans-serif;
+  color: #888888;
 }
 
 .sc-partner {
