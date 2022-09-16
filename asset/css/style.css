@@ -1142,30 +1142,9 @@ section + section {
   position: relative;
   height: 60vw;
   overflow: hidden;
-  background: linear-gradient(180deg, rgb(105, 146, 184) 0%, rgb(224, 219, 214) 98%);
+  background-image: url(../images/main.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
-}
-.sc-visual::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #eb5b29;
-  opacity: 0.5;
-}
-.sc-visual .slogan {
-  position: absolute;
-  top: 6vw;
-  left: 50%;
-  text-transform: uppercase;
-  transform: translateX(-50%);
-  color: #fff;
-  font-size: 1.4vw;
-  line-height: 22px;
 }
 .sc-visual .ani-area {
   position: absolute;
@@ -1214,10 +1193,10 @@ section + section {
 }
 .sc-about .column-right .thumb-box {
   margin-top: 20px;
-  padding-bottom: 50%;
-  background-image: url(../images/about-thumb1.jpeg);
+  padding-bottom: 70%;
+  background-image: url(../images/about-thumb1.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .sc-about .group-vision {
   height: 40vw;
