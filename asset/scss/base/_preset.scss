@@ -13,20 +13,29 @@ section{
         padding: 0 40px;
     }
 }
-// @include laptop1{
-//     .header{
-//         & *{
-//             zoom: 1 !important;
-//         }
-//     }
-//     .container{
-//         & *{
-//             zoom: 1 !important;
-//         }
-//     }
-//     .footer{
-//         & *{
-//             zoom: 1 !important;
-//         }
-//     }
-// }
+.footer {
+    padding: 0 40px;
+}
+.responsive-notice {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: none;
+    background-color: $color-orange;
+    .notice-txt {
+        @include position-Center;
+        font-size: 18px;
+        line-height: 1.2;
+        font-family: $font-kn1;
+        color: $color-white;
+    }
+}
+
+@include laptop {
+    .responsive-notice {
+        display: block;
+    }
+}

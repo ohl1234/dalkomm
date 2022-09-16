@@ -234,6 +234,7 @@ $(function(){
         $('[data-id='+target+']').addClass('active').siblings().removeClass('active')
     })
 
+
     /**
      *  3. swiper-slide event
      */

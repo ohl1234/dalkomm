@@ -65,3 +65,9 @@
     transition-delay: 0.2s;
     transition-duration: 3s;
 }
+
+@mixin laptop {
+    @media (max-width:1119px){
+        @content;
+    }
+}
