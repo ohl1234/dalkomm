@@ -1,51 +1,53 @@
 .sc-visual{
     position: relative;
-    height:60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height:100vh;
     overflow: hidden;
-    background-image: url(../images/main.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     display: block;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: $color-orange;
-    //     opacity: 0.5;
-    // }
-    // .slogan{
-    //     position: absolute;
-    //     top: 6vw;
-    //     left: 50%;
-    //     text-transform: uppercase;
-    //     transform: translateX(-50%);
-    //     color: $color-white;
-    //     font-size: 1.4vw;
-    //     line-height: 22px;
-    // }
-    .ani-area{
+    .bg-area {
         position: absolute;
-        top: 10vw;
-        left: 50vw;
-        transform: translateX(-50%);
-        z-index: 3;
-        width: 20vw;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-    // .thumb-area{
-    //     position: absolute;
-    //     bottom: 0px;
-    //     left: 0;
-    //     z-index: 10;
-    //     padding-bottom: 50%;
-    //     width: 100%;
-    //     background-image: url(../images/main-visual.svg);
-    //     background-repeat: no-repeat;
-    //     background-size: 100%;
-    //     background-position: center bottom;
-    // }
+    .ani-area{
+        @include position-Center;
+        width: 150vw;
+        transform-origin: center;
+        svg {
+            fill: #222;
+        }
+    }
+    .text-area {
+        padding: 5vw;
+        font-size: 6vw;
+        font-family: $font-en1;
+        color: $color-white;
+
+    }
+    .txt-line {
+        display: block;
+        overflow: hidden;
+        &.line1 {
+            color: $color-orange;
+        }
+        &.line2,
+        &.line3 {
+            -webkit-text-stroke: 2px $color-white;
+            -webkit-text-fill-color: transparent;
+        }
+        .text {
+            display: block;
+        }
+    }
+
 }
 
 .sc-about{

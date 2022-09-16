@@ -287,6 +287,23 @@ section + section {
     display: block;
   }
 }
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: #eb5b29;
+}
+.loading .loading-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+}
+
 .header, .gnb-header {
   position: absolute;
   top: 0;
@@ -1140,19 +1157,55 @@ section + section {
 
 .sc-visual {
   position: relative;
-  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
   overflow: hidden;
-  background-image: url(../images/main.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+}
+.sc-visual .bg-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+.sc-visual .bg-area img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sc-visual .ani-area {
   position: absolute;
-  top: 10vw;
-  left: 50vw;
-  transform: translateX(-50%);
-  z-index: 3;
-  width: 20vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vw;
+  transform-origin: center;
+}
+.sc-visual .ani-area svg {
+  fill: #222;
+}
+.sc-visual .text-area {
+  padding: 5vw;
+  font-size: 6vw;
+  font-family: "Goldplay-SemiBold", sans-serif;
+  color: #fff;
+}
+.sc-visual .txt-line {
+  display: block;
+  overflow: hidden;
+}
+.sc-visual .txt-line.line1 {
+  color: #eb5b29;
+}
+.sc-visual .txt-line.line2, .sc-visual .txt-line.line3 {
+  -webkit-text-stroke: 2px #fff;
+  -webkit-text-fill-color: transparent;
+}
+.sc-visual .txt-line .text {
+  display: block;
 }
 
 .sc-about {

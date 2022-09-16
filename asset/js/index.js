@@ -81,14 +81,13 @@ $(function(){
      *  2-10 .sc-location map
      */
 
-    gsap.to('.sc-visual .ani-area',1,{
-        scale:1.1,
-        repeat:-1, //음수는 무한
-        yoyo:true,
-        duration:1
-    });
+    const introAni = gsap.timeline({});
+    introAni.addLabel('a')
+    .to('.loading',{ opacity:0, display:'none', duration:1, delay:0.8},'a')
+    .to('.sc-visual .ani-area',{ scale:100, duration:2, display:'none', delay:2},'a')
+    .from('.sc-visual .text',{ yPercent:100, stagger:0.2, duration:0.5, delay:2.8},'a')
 
-    gsap.from('.sc-visual .thumb-area',{
+    gsap.from('.sc-visual .bg-area',{
         scrollTrigger:{
             trigger:".sc-visual",
             start:"top top",

@@ -6,6 +6,7 @@
     overflow: hidden;
     margin: -1px;
 }
+
 section{
     width: 100%;
     & + section{
@@ -13,9 +14,11 @@ section{
         padding: 0 40px;
     }
 }
+
 .footer {
     padding: 0 40px;
 }
+
 .responsive-notice {
     position: fixed;
     top: 0;
@@ -37,5 +40,19 @@ section{
 @include laptop {
     .responsive-notice {
         display: block;
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: $color-orange;
+    .loading-thumb {
+        @include position-Center;
+        width: 30vw;
     }
 }
