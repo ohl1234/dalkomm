@@ -1794,15 +1794,17 @@ section + section {
 .sc-location .group-title .sub-title {
   display: inline-block;
   text-align: right;
-  font-family: "NEXONLv1GothicRegular", sans-serif;
-  font-weight: 800;
-  color: #eb5b29;
+  font-family: "CooperBlackStd", sans-serif;
+  color: #444;
 }
 .sc-location .group-title .sub-title span {
   display: block;
 }
-.sc-location .group-title .sub-title span:last-of-type {
-  margin-top: 12px;
+.sc-location .group-title .sub-title span:first-of-type {
+  color: #eb5b29;
+}
+.sc-location .group-title .sub-title span:nth-child(n+2) {
+  color: #444;
 }
 .sc-location .group-list {
   display: flex;

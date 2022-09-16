@@ -655,13 +655,15 @@
         .sub-title{
             display: inline-block;
             text-align: right;
-            font-family: $font-kn2;
-            font-weight: 800;
-            color: $color-orange;
+            font-family: $font-en2;
+            color: $color-txt2;
             span{
                 display: block;
-                &:last-of-type {
-                    margin-top: 12px;
+                &:first-of-type {
+                    color: $color-orange;
+                }
+                &:nth-child(n+2) {
+                    color: $color-txt2;
                 }
             }
         }
