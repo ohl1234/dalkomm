@@ -14,7 +14,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        background-color: #eb5b29;
+        background-color: $color-orange;
         opacity: 0.5;
     }
     .slogan{
@@ -35,18 +35,18 @@
         z-index: 3;
         width: 20vw;
     }
-    .thumb-area{
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        z-index: 10;
-        padding-bottom: 50%;
-        width: 100%;
-        background-image: url(../images/main-visual.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center bottom;
-    }
+    // .thumb-area{
+    //     position: absolute;
+    //     bottom: 0px;
+    //     left: 0;
+    //     z-index: 10;
+    //     padding-bottom: 50%;
+    //     width: 100%;
+    //     background-image: url(../images/main-visual.svg);
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //     background-position: center bottom;
+    // }
 }
 
 .sc-about{
@@ -63,6 +63,7 @@
         .sub-title{
             display: block;
             margin-bottom: 30px;
+            color: $color-orange;
             span{
                 display: block;
                 &:nth-of-type(2){
@@ -74,7 +75,7 @@
             width: 55vw;
             font-size: 1.4vw;
             line-height: 1.3;
-            font-weight: 300;
+            font-family: $font-kn2;
             //
             span{
                 display: block;
@@ -97,7 +98,7 @@
         background-repeat: no-repeat;
         background-position: center right;
         background-size: 40vw;
-        background-color: $color-beige3;
+        background-color: $color-blue;
         
     }
     .vision-area{
@@ -109,15 +110,18 @@
         .sub-title{
             display: flex;
             flex-direction: column;
+            margin-top: 40px;
+            color: $color-orange;
         }
         .vision-txt{
-            font-weight: 300;
-            font-size: 1.6vw;
+            font-size: 1.5vw;
             line-height: 1.55;
-            
+            font-family: $font-kn2;
+            margin-bottom: 40px;
+            color: $color-white;
             span{
                 display: block;
-                width: 44vw;
+                width: 42vw;
                 & + span{
                     margin-top: 10px;
                 }
@@ -136,6 +140,9 @@
         top: 45px;
         left: 85px;
         z-index: 3;
+        .sc-title {
+            color: $color-white;
+        }
         .sub-title{
             display: inline-block;
             width: 75%;
@@ -147,6 +154,7 @@
             display: block;
             margin-top: 20px;
             font-size: 26px;
+            font-family: $font-kn2;
         }
         .tab-list{
             display: flex;
@@ -203,11 +211,14 @@
 
 .sc-coffee{
     margin: 100px 0;
+    color: $color-white;
     .group-layout{
         display: flex;
         height: 40vw;
-        background-color: $color-beige3;
-        
+        background-color: $color-orange;
+        .sc-title {
+            color: $color-white;
+        }
         .column-left{
             display: flex;
             flex-direction: column;
@@ -225,10 +236,11 @@
             display: flex;
             justify-content: space-between;
             padding-top: 3vw;
-            border-top: 1px solid $color-gray2;
+            border-top: 1px solid rgba(255,255,255,0.4);
             .desc{
                 font-size: 1.2vw;
                 line-height: 1.3;
+                font-family: $font-kn2;
             }
         }   
         .column-right{
@@ -240,7 +252,7 @@
         .rolling-item{
             width: 18vw;
             height: 20vw;
-            background-color: $color-beige1;
+            background-color: $color-beige;
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center center;
@@ -291,15 +303,17 @@
             margin-bottom: 100px;
             .sub-title{
                 display: block;
-                width: 50vw;
+                width: 52vw;
                 font-size: 3vw;
                 line-height: 1.3;
+                font-family: $font-kn2;
+                font-weight: 800;
             }
         }
     }
     .group-slide{
-        border-top: 1px solid $color-gray2;
-        border-bottom: 1px solid $color-gray2;
+        border-top: 1px solid $color-gray1;
+        border-bottom: 1px solid $color-gray1;
     }
     .slide2{
         .swiper-slide{
@@ -318,8 +332,8 @@
             justify-content: space-between;
             width: 74.516%;
             padding: 0 30px;
-            background-color: #fbf4e4;
-            border-left: 1px solid $color-gray2;
+            background-color: $color-ghost;
+            border-left: 1px solid $color-gray1;
         }
         .txt-tit{
             font-size: 2.2vw;
@@ -331,13 +345,14 @@
                 font-size: 1.7vw;
                 margin-left: 10px;
                 border-radius: 20px;
-                background-color: #eb5b29;
+                background-color: $color-orange;
                 color: $color-white;
             }
         }
         .desc{
             font-weight: 300;
             font-size: 1.7vw;
+            font-family: $font-kn2;
         }
         .thumb-box{
             width: 45.273%;
@@ -431,6 +446,7 @@
                 font-size: 1.2vw;
                 line-height: 1.3;
                 margin-top: 10px;
+                font-family: $font-kn2;
             }
         }
     }
@@ -439,11 +455,12 @@
 .sc-season{
     .group-title{
         margin-bottom: 50px;
+        color: $color-fall;
     }
     .group-list{
         display: flex;
-        border-top: 1px solid $color-gray2;
-        border-bottom: 1px solid $color-gray2;
+        border-top: 1px solid $color-gray1;
+        border-bottom: 1px solid $color-gray1;
         & > div{
             height: 36vw;
         }
@@ -459,7 +476,7 @@
                 width: 100%;
                 height: 100%;
                 opacity: 0;
-                background-color: #e4dccb;
+                background-color: $color-beige;
                 &.active{
                     opacity: 1;
                     transition: all 0.8s;
@@ -499,7 +516,7 @@
                 display: flex;
                 align-items: center;
                 height: calc(100% / 5);
-                border-bottom: 1px solid $color-gray2;
+                border-bottom: 1px solid $color-gray1;
                 :hover{
                     & > *{
                         opacity: 0.4;
@@ -510,14 +527,15 @@
                 }
             }
             .txt-tit{
-                font-size: 1.3vw;
+                font-size: 1.5vw;
                 line-height: 24px;
+                color: $color-brown1;
             }
             .desc{
                 display: block;
                 margin-top: 10px;
-                font-size: 1.1vw;
-                font-weight: 300;
+                font-size: 1vw;
+                font-family: $font-kn2;
                 color: $color-brown2;
             }
         }
@@ -567,22 +585,24 @@
             position: relative;
             width:28vw;
             height: 40vw;
-            background-color: $color-beige3;
+            background-color: $color-white;
         }
         .txt-box{
             padding: 2vw;
+            font-family: $font-kn2;
         }
         .txt-tit{
             display: block;
+            margin-bottom: 10px;
             font-size: 1.7vw;
             line-height: 1.4;
             text-transform: uppercase;
-            margin-bottom: 10px;
             word-break: break-all;
+            color: $color-txt;
         }
         .desc{
             font-size: 1.1vw;
-            font-weight: 300;
+            color: $color-txt2;
         }
     }
 }
@@ -596,17 +616,18 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .station-box{
+        .msg-box{
             display: flex;
             align-items: center;
+            font-family: $font-kn2;
             &::before{
                 content: '';
                 display: inline-block;
                 vertical-align: top;
-                width: 40px;
-                height: 40px;
+                width: 60px;
+                height: 60px;
                 margin-right: 20px;
-                background-image: url(../images/ic-coffee.png);
+                background-image: url(../images/ic-location.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center center;
@@ -633,19 +654,25 @@
         .sub-title{
             display: inline-block;
             text-align: right;
+            font-family: $font-kn2;
+            font-weight: 800;
+            color: $color-orange;
             span{
                 display: block;
+                &:last-of-type {
+                    margin-top: 12px;
+                }
             }
         }
     }
     .group-list{
         display: flex;
         margin-top: 80px;
-        
+        font-family: $font-kn2;
         .column-left{
             width: 55%;
             padding-right: 30px;
-            border-right: 1px solid $color-gray2;
+            border-right: 1px solid $color-gray1;
         }
         .location-item{
             & + li{
@@ -669,9 +696,12 @@
             }
         }
         .info-tit{
+            margin-bottom: 8px;
             font-size: 1.7vw;
             line-height: 29px;
-            margin-bottom: 8px;
+            font-weight: 700;
+            color: $color-txt;
+            
         }
         .info-txt{
             font-size: 1.2vw;
@@ -735,7 +765,6 @@
                 top: 100px;
                 width: 70%;
                 word-break: keep-all;
-                font-weight: 300;
                 font-size: 1.2vw;
                 line-height: 1.3;
             }
@@ -744,24 +773,22 @@
     .group-contact{
         height: 30vh;
         margin-top: 140px;
-        background-color: $color-beige3;
-        
+        background-color: $color-blue;
+        color: $color-white;
+        background-image: url(../images/location-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     .title-box{
         font-size: 3vw;
         line-height: 1.2;
         .contact-tit{
+            font-family: $font-kn2;
             display: block;
+            font-weight: 700;
             &:last-of-type{
                 display: inline-block;
-            }
-        }
-        p{
-            display: inline-block;
-            font-size: 1.2vw;
-            font-weight: 300;
-            span{
-                display: block;
             }
         }
     }
@@ -784,7 +811,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        border-bottom: 1px solid $color-gray2;
+        border-bottom: 1px solid $color-white;
     }
     .selection{
         display: flex;
@@ -807,7 +834,7 @@
             transform-origin: left center;
             @include flag-Img;
             background-position: -33px -189px;
-            background-color: $color-gray3;
+            background-color: $color-gray2;
             -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
             box-shadow: 0 0 5px rgb(0 0 0 / 30%);
             &.canada{
@@ -839,7 +866,8 @@
         font-size: 1vw;
         padding: 5px 0;
         background-color: $color-white;
-        border: 1px solid $color-gray5;
+        color: $color-txt;
+        border: 1px solid $color-gray4;
         border-radius: 7px;
         -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
         box-shadow: 0 0 1px rgb(0 0 0 / 10%);
@@ -854,7 +882,7 @@
         padding: 10px;
         width: 100%;
         &:hover{
-            background-color: $color-gray5;
+            background-color: $color-gray4;
         }
         &.canada{
             background-position: -145px -51px;
@@ -886,7 +914,7 @@
         margin-left: 8px;
         @include flag-Img;
         background-position: -285px -281px;
-        background-color: $color-gray3;
+        background-color: $color-gray2;
         -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
         box-shadow: 0 0 5px rgb(0 0 0 / 30%);
         &.canada{
@@ -912,7 +940,7 @@
         margin-left: 15px;
         border-style: solid;
         border-width: 8px 6px 0;
-        border-color: $color-gray4 transparent transparent;
+        border-color: $color-gray3 transparent transparent;
     }
     .select-code{
         margin-left: 10px;
@@ -921,7 +949,7 @@
     input{
         width: calc(100% - 80px);
         &::placeholder{
-            color: $color-gray2;
+            color: $color-white;
         }
         background-color: transparent;
         font-size: 1.1vw;
@@ -930,11 +958,11 @@
     }
     .contact-msg{
         margin-top: 20px;
-        color: $color-gray1;
+        color: $color-white;
         font-size: 1vw;
-        font-weight: 300;
+        font-family: $font-kn1;
         span{
-            color: $color-txt;
+            font-weight: 700;
         }
     }
 }
@@ -945,6 +973,8 @@
         position: relative;
         height: 120px;
         margin-bottom: 200px;
+        font-family: $font-en2;
+        color: $color-blue;
         .tit-ani{
             position: absolute;
             top: 0;
@@ -967,6 +997,11 @@
         .sub-title{
             font-size: 3vw;
             line-height: 1.3;
+            font-family: $font-kn2;
+            font-weight: 800;
+            span {
+                font-family: $font-en1;
+            }
         }
         .tab-list{
             display: flex;
@@ -976,15 +1011,16 @@
         .btn-tab{
             display: inline-block;
             padding: 12px 22px;
-            background-color: $color-beige1;
-            border: 1px solid $color-gray2;
+            background-color: $color-ghost;
+            border: 1px solid $color-gray1;
             border-radius: 30px;
             text-transform: uppercase;
             & + a{
                 margin-left: 10px;
             }
             &.active{
-                background-color: $color-brown;
+                background-color: $color-txt;
+                border: 1px solid transparent;
                 color: $color-white;
             }
         }
@@ -1092,7 +1128,7 @@
             display: inline-block;
             width: 36px;
             height: 36px;
-            background-color: $color-brown;
+            background-color: $color-brown1;
             border-radius: 30px;
             cursor: pointer;
         }
@@ -1122,23 +1158,20 @@
     margin-bottom: 120px;
     .group-title{
         display: flex;
-        margin-bottom: 30px;
+        justify-content: space-between;
         .sc-title{
             width: calc(100% - 75%);
         }
         .sub-title{
             width: 75%;
-            span{
-                display: block;
-                &:last-of-type{
-                    margin-left: 150px;
-                }
-            }
+            font-family: $font-en2;
+            text-align: right;
         }
     }
     .group-inquiry{
         display: flex;
         justify-content: space-between;
+        margin-top: 80px;
         height: 40vw;
         .column-left{
             width: 50%;
@@ -1154,6 +1187,10 @@
             justify-content: center;
             height: 50%;
             font-size: 1.8vw;
+            font-family: $font-kn2;
+            span {
+                font-weight: 800;
+            }
         }
         .inquiry-link{
             position: relative;
@@ -1185,18 +1222,23 @@
                 }
             }
         }
+        .link-more {
+            font-family: $font-en1;
+        }
         .column-right{
             width: 40%;
         }
         .contact-area{
             height: 100%;
             padding: 3vw;
-            background-color: $color-beige3;
+            background-color: $color-blue;
+            color: $color-white;
             .contact-tit{
                 display: block;
                 margin-bottom: 40px;
                 font-size: 1.6vw;
                 line-height: 1.3;
+                font-family: $font-kn2;
                 letter-spacing: 0.5px;
             }
             .input-wrap{
@@ -1216,7 +1258,7 @@
                     position: absolute;
                     border-style: solid;
                     border-width: 6px 5px 0 5px;
-                    border-color: #000 transparent transparent transparent;
+                    border-color: $color-dark transparent transparent transparent;
                 }
             }
             #contact-way{
@@ -1224,14 +1266,15 @@
                 height: 47px;
                 height: 5vw;
                 background-color: transparent;
-                border-bottom: 1px solid $color-gray2;
+                border-bottom: 1px solid $color-white;
+                font-family: $font-kn1;
             }
             .select-wrapper{
                 position: relative;
                 display: flex;
                 align-items: center;
                 margin-top: 30px;
-                border-bottom: 1px solid $color-gray2;
+                border-bottom: 1px solid $color-white;
             }
             .selection{
                 display: flex;
@@ -1254,7 +1297,7 @@
                     transform-origin: left center;
                     @include flag-Img;
                     background-position: -33px -189px;
-                    background-color: $color-gray3;
+                    background-color: $color-gray2;
                     -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
                     box-shadow: 0 0 5px rgb(0 0 0 / 30%);
                     &.canada{
@@ -1286,7 +1329,8 @@
                 padding-top: 5px;
                 padding-bottom: 5px;
                 background-color: $color-white;
-                border: 1px solid $color-gray5;
+                color: $color-txt;
+                border: 1px solid $color-gray4;
                 border-radius: 7px;
                 -webkit-box-shadow: 0 0 1px rgb(0 0 0 / 10%);
                 box-shadow: 0 0 1px rgb(0 0 0 / 10%);
@@ -1301,7 +1345,7 @@
                 padding: 10px;
                 width: 100%;
                 &:hover{
-                    background-color: $color-gray5;
+                    background-color: $color-gray4;
                 }
             }
             .option-box{
@@ -1317,7 +1361,7 @@
                 transform-origin: left center;
                 @include flag-Img;
                 background-position: -285px -281px;
-                background-color: $color-gray3;
+                background-color: $color-gray2;
                 -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 30%);
                 box-shadow: 0 0 5px rgb(0 0 0 / 30%);
                 &.canada{
@@ -1343,7 +1387,7 @@
                 margin-left: 15px;
                 border-style: solid;
                 border-width: 8px 6px 0;
-                border-color: $color-gray4 transparent transparent;
+                border-color: $color-gray3 transparent transparent;
             }
             .select-code{
                 margin-left: 10px;
@@ -1352,7 +1396,7 @@
             input{
                 width: calc(100% - 80px);
                 &::placeholder{
-                    color: $color-gray2;
+                    color: $color-gray1;
                 }
                 background-color: transparent;
                 font-size: 1.1vw;
@@ -1360,11 +1404,11 @@
             }
             .contact-msg{
                 margin-top: 20px;
-                color: $color-gray1;
+                color: $color-white;
                 font-size: 1.1vw;
-                font-weight: 300;
+                font-family: $font-kn1;
                 span{
-                    color: $color-txt;
+                    font-weight: 700;
                 }
             }
         }

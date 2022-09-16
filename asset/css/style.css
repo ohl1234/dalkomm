@@ -111,9 +111,9 @@ html {
 body {
   font-family: "Goldplay-SemiBold", sans-serif;
   font-weight: 400;
-  color: #5f5348;
+  color: #444;
   font-size: 14px;
-  background-color: #fbf4e4;
+  background-color: #f9f9f9;
   width: 100vw;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -289,8 +289,8 @@ section + section {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ecebe4;
-  color: #5f5348;
+  background-color: #f9f9f9;
+  color: #222;
   box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.2);
 }
 .header.active .logo-area {
@@ -304,12 +304,12 @@ section + section {
   left: 0;
   width: 100vw;
   z-index: 1000;
-  background-color: #ecebe4;
-  color: #5f5348;
+  background-color: #e4dccb;
+  color: #222;
 }
 .gnb-area .gnb-header {
   position: static;
-  color: #5f5348;
+  color: #222;
 }
 .gnb-area .group-menu {
   display: flex;
@@ -341,10 +341,10 @@ section + section {
 }
 .gnb-area .gnb-title {
   margin-bottom: 40px;
-  padding-left: 10px;
   font-size: 4vw;
   line-height: 1.1;
   letter-spacing: -2px;
+  color: #eb5b29;
 }
 .gnb-area .gnb-list {
   display: grid;
@@ -392,7 +392,6 @@ section + section {
 .gnb-area .group-project {
   display: flex;
   margin: 12px 32px 40px;
-  font-weight: 300;
 }
 .gnb-area .group-project > * {
   width: 50%;
@@ -402,7 +401,8 @@ section + section {
 .gnb-area .info-tit {
   display: block;
   margin-bottom: 20px;
-  color: #9d958c;
+  color: #444;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .gnb-area .info-list {
   display: flex;
@@ -412,10 +412,13 @@ section + section {
   align-items: center;
   width: 50%;
   height: 30px;
-  border-right: 1px solid #c6c0ba;
+  border-right: 1px solid #c5c5c5;
 }
 .gnb-area .info-item:last-child {
   padding-left: 20px;
+}
+.gnb-area .link-btn {
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .gnb-area .link-btn::after {
   content: "";
@@ -452,8 +455,8 @@ section + section {
   height: 100vh;
   padding: 45px;
   z-index: 1200;
-  color: #5f5348;
-  background-color: #ecebe4;
+  color: #222;
+  background-color: #f9f9f9;
   transition: all 1s;
 }
 .requset-area.active {
@@ -463,7 +466,6 @@ section + section {
   margin-bottom: 30px;
   font-size: 3vw;
   line-height: 1.1;
-  font-weight: 400;
   letter-spacing: -0.5px;
   background-position: center center;
   border-color: transparent;
@@ -477,12 +479,15 @@ section + section {
   display: flex;
   flex-direction: column;
 }
+.requset-area .input-name {
+  font-family: "Noto Sans KR", sans-serif;
+}
 .requset-area .select-wrapper {
   position: relative;
   display: flex;
   margin-top: 20px;
   align-items: center;
-  border-bottom: 1px solid #c6c0ba;
+  border-bottom: 1px solid #c5c5c5;
 }
 .requset-area .select-box {
   display: flex;
@@ -504,7 +509,7 @@ section + section {
   background-image: url(../images/sc-flag-bg.png);
   background-repeat: no-repeat;
   background-position: -33px -189px;
-  background-color: #c5c5c5;
+  background-color: #9a9a9a;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .requset-area .select-flag i.canada {
@@ -563,7 +568,7 @@ section + section {
   background-image: url(../images/sc-flag-bg.png);
   background-repeat: no-repeat;
   background-position: -285px -281px;
-  background-color: #c5c5c5;
+  background-color: #9a9a9a;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .requset-area .option-flag.canada {
@@ -585,7 +590,7 @@ section + section {
   margin-left: 6px;
   border-style: solid;
   border-width: 5px 4px 0;
-  border-color: #9a9a9a transparent transparent;
+  border-color: #000 transparent transparent;
 }
 .requset-area .select-code {
   margin-left: 10px;
@@ -597,25 +602,25 @@ section + section {
   height: 52px;
 }
 .requset-area input::-moz-placeholder {
-  color: #c6c0ba;
+  color: #c5c5c5;
 }
 .requset-area input:-ms-input-placeholder {
-  color: #c6c0ba;
+  color: #c5c5c5;
 }
 .requset-area input::placeholder {
-  color: #c6c0ba;
+  color: #c5c5c5;
 }
 .requset-area .input-name {
-  border-bottom: 1px solid #c6c0ba;
+  border-bottom: 1px solid #c5c5c5;
 }
 .requset-area .contact-msg {
   margin-top: 20px;
-  color: #9d958c;
+  color: #c6c0ba;
   font-size: 1vw;
-  font-weight: 300;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .requset-area .contact-msg span {
-  color: #5f5348;
+  color: #222;
 }
 
 .footer {
@@ -627,8 +632,8 @@ section + section {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  border-top: 1px solid #c6c0ba;
-  border-bottom: 1px solid #c6c0ba;
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
 }
 .footer .group-flex1 > div + div {
   font-size: 1.8vw;
@@ -652,14 +657,14 @@ section + section {
 .footer .group-flex2 {
   display: flex;
   padding: 30px 0;
-  border-bottom: 1px solid #c6c0ba;
+  border-bottom: 1px solid #c5c5c5;
   font-weight: 300;
 }
 .footer .group-flex2 .group-list {
   width: 50%;
   margin: 10px 0;
   line-height: 19px;
-  border-right: 1px solid #c6c0ba;
+  border-right: 1px solid #c5c5c5;
   font-size: 1.3vw;
   line-height: 1.3;
 }
@@ -711,6 +716,7 @@ section + section {
 }
 .footer .group-flex2 .link-btn {
   width: 50%;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .footer .group-flex2 .link-btn::after {
   content: "";
@@ -740,6 +746,7 @@ section + section {
 .footer .group-flex2 .group-requset .txt {
   width: 30vw;
   font-size: 1.6vw;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
   letter-spacing: -0.5px;
   background-position: center center;
   border-color: transparent;
@@ -765,7 +772,7 @@ section + section {
   height: 4px;
   margin: 0 12px;
   border-radius: 50%;
-  background-color: #5f5348;
+  background-color: #222;
 }
 .footer .corp-area .link-corp + a::before {
   content: "";
@@ -775,16 +782,16 @@ section + section {
   height: 4px;
   margin: 0 20px;
   border-radius: 50%;
-  background-color: #5f5348;
+  background-color: #222;
 }
 
 .header .right-area .btn-requset {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #434e60;
+  color: #222;
   border-radius: 30px;
-  background-color: #eaeef3;
+  background-color: #fff;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -794,11 +801,11 @@ section + section {
   width: 12vw;
   height: 3vw;
   font-size: 1vw;
-  font-weight: 500;
   transition: all 0.3s;
 }
 .header .right-area .btn-requset:hover {
-  background-color: #c5c5c5;
+  background-color: #222;
+  color: #fff;
 }
 
 .header.active .btn-requset {
@@ -808,17 +815,17 @@ section + section {
   color: #fff;
   line-height: 1.55;
   border-radius: 30px;
-  background-color: #605348;
+  background-color: #222;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .header.active .btn-requset:hover {
-  background-color: #4e4237;
+  background-color: #000;
 }
 .header.active .menu-bar {
-  background-color: #5f5348;
+  background-color: #222;
 }
 
 .gnb-header .right-area .btn-requset {
@@ -826,11 +833,11 @@ section + section {
   height: 3vw;
   font-size: 1vw;
   font-weight: 500;
-  background-color: #605348;
+  background-color: #222;
   color: #fff;
 }
 .gnb-header .right-area .btn-requset:hover {
-  background-color: #4e4237;
+  background-color: #000;
 }
 
 .btn-menu, .btn-close {
@@ -859,24 +866,21 @@ section + section {
 .gnb-area .btn-close .bar-wrap {
   height: 15px;
   margin-right: 3px;
-  vertical-align: middle;
+  vertical-align: -2px;
 }
 .gnb-area .btn-close i {
   display: inline-block;
   width: 2px;
   height: 15px;
-  background-color: #5f5348;
+  background-color: #222;
 }
 .gnb-area .btn-close i:nth-child(1) {
   margin-bottom: 0;
 }
 .gnb-area .btn-requset {
-  background-color: #5f5348;
+  background-color: #222;
   color: #fff;
   transition: all 0.3s;
-}
-.gnb-area .btn-requset:hover {
-  background-color: #4e4237;
 }
 
 .requset-area .btn-close {
@@ -927,32 +931,41 @@ section + section {
   color: #fff;
   line-height: 1.55;
   border-radius: 30px;
-  background-color: #605348;
+  background-color: #222;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .requset-area .btn-send:hover {
-  background-color: #4e4237;
+  background-color: #000;
 }
 
-.input-area .btn-send {
+.sc-location .btn-send {
   position: absolute;
   bottom: 0.5vw;
   right: 0;
-  display: block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  border-radius: 30px;
+  background-color: #fff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition-delay: 0.2s;
+  transition-duration: 3s;
   width: 13vw;
   height: 3vw;
   padding: 0 15px;
   font-size: 1vw;
-  color: #fff;
-  background-color: #5f5348;
-  border-radius: 30px;
   transition: all 0.3s;
 }
-.input-area .btn-send:hover {
-  background-color: #4e4237;
+.sc-location .btn-send:hover {
+  background-color: #222;
+  color: #fff;
 }
 
 .sc-coffee .link-more {
@@ -962,7 +975,7 @@ section + section {
   color: #fff;
   line-height: 1.55;
   border-radius: 30px;
-  background-color: #605348;
+  background-color: #222;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -973,14 +986,15 @@ section + section {
   transition: all 0.3s;
 }
 .sc-coffee .link-more:hover {
-  background-color: #4e4237;
+  background-color: #fff;
+  color: #222;
 }
 
 .sc-mdpick .link-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #434e60;
+  color: #2a31a0;
   line-height: 1.55;
   border-radius: 30px;
   background-color: #fff;
@@ -993,12 +1007,14 @@ section + section {
   margin-top: 20px;
   font-size: 1.2vw;
   transition: all 0.3s;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-mdpick .link-btn:hover {
-  background-color: #c5c5c5;
+  background-color: #2a31a0;
+  color: #fff;
 }
 
-.slide3 .link-btn {
+.sc-story .link-btn {
   position: absolute;
   bottom: 2vw;
   left: 2vw;
@@ -1008,7 +1024,7 @@ section + section {
   color: #fff;
   line-height: 1.55;
   border-radius: 30px;
-  background-color: #605348;
+  background-color: #222;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -1018,22 +1034,23 @@ section + section {
   font-size: 1vw;
   transition: all 0.3s;
 }
-.slide3 .link-btn:hover {
-  background-color: #4e4237;
+.sc-story .link-btn:hover {
+  background-color: #000;
 }
 
-.contact-area .btn-send {
+.sc-partner .btn-send {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  line-height: 1.55;
+  color: #222;
   border-radius: 30px;
-  background-color: #605348;
+  background-color: #fff;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition-delay: 0.2s;
+  transition-duration: 3s;
   align-self: flex-start;
   width: 100%;
   height: 3.5vw;
@@ -1041,8 +1058,9 @@ section + section {
   font-size: 1.1vw;
   transition: all 0.3s;
 }
-.contact-area .btn-send:hover {
-  background-color: #4e4237;
+.sc-partner .btn-send:hover {
+  background-color: #222;
+  color: #fff;
 }
 
 .footer .btn-requset {
@@ -1052,7 +1070,7 @@ section + section {
   color: #fff;
   line-height: 1.55;
   border-radius: 30px;
-  background-color: #605348;
+  background-color: #222;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -1063,21 +1081,26 @@ section + section {
   margin-top: 30px;
   font-size: 1.2vw;
 }
+.footer .btn-requset:hover {
+  background-color: #000;
+}
 
 .sc-title {
   font-size: 1.4vw;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
+  color: #222;
 }
 
 .sub-title {
-  font-size: 7vw;
+  font-size: 6vw;
   line-height: 1;
   letter-spacing: -2px;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
+  font-family: "CooperBlackStd", sans-serif;
 }
 
 .sc-visual {
@@ -1117,18 +1140,6 @@ section + section {
   z-index: 3;
   width: 20vw;
 }
-.sc-visual .thumb-area {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  z-index: 10;
-  padding-bottom: 50%;
-  width: 100%;
-  background-image: url(../images/main-visual.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center bottom;
-}
 
 .sc-about {
   padding: 110px 40px;
@@ -1146,6 +1157,7 @@ section + section {
 .sc-about .column-right .sub-title {
   display: block;
   margin-bottom: 30px;
+  color: #eb5b29;
 }
 .sc-about .column-right .sub-title span {
   display: block;
@@ -1157,7 +1169,7 @@ section + section {
   width: 55vw;
   font-size: 1.4vw;
   line-height: 1.3;
-  font-weight: 300;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-about .column-right .about-txt span {
   display: block;
@@ -1178,7 +1190,7 @@ section + section {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 40vw;
-  background-color: #dad7d0;
+  background-color: #2a31a0;
 }
 .sc-about .vision-area {
   display: flex;
@@ -1190,15 +1202,19 @@ section + section {
 .sc-about .vision-area .sub-title {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  color: #eb5b29;
 }
 .sc-about .vision-area .vision-txt {
-  font-weight: 300;
-  font-size: 1.6vw;
+  font-size: 1.5vw;
   line-height: 1.55;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
+  margin-bottom: 40px;
+  color: #fff;
 }
 .sc-about .vision-area .vision-txt span {
   display: block;
-  width: 44vw;
+  width: 42vw;
 }
 .sc-about .vision-area .vision-txt span + span {
   margin-top: 10px;
@@ -1215,6 +1231,9 @@ section + section {
   left: 85px;
   z-index: 3;
 }
+.sc-store .group-title .sc-title {
+  color: #fff;
+}
 .sc-store .group-title .sub-title {
   display: inline-block;
   width: 75%;
@@ -1226,6 +1245,7 @@ section + section {
   display: block;
   margin-top: 20px;
   font-size: 26px;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-store .group-title .tab-list {
   display: flex;
@@ -1277,11 +1297,15 @@ section + section {
 
 .sc-coffee {
   margin: 100px 0;
+  color: #fff;
 }
 .sc-coffee .group-layout {
   display: flex;
   height: 40vw;
-  background-color: #dad7d0;
+  background-color: #eb5b29;
+}
+.sc-coffee .group-layout .sc-title {
+  color: #fff;
 }
 .sc-coffee .group-layout .column-left {
   display: flex;
@@ -1300,11 +1324,12 @@ section + section {
   display: flex;
   justify-content: space-between;
   padding-top: 3vw;
-  border-top: 1px solid #c6c0ba;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 .sc-coffee .group-layout .more-box .desc {
   font-size: 1.2vw;
   line-height: 1.3;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-coffee .group-layout .column-right {
   display: flex;
@@ -1315,7 +1340,7 @@ section + section {
 .sc-coffee .group-layout .rolling-item {
   width: 18vw;
   height: 20vw;
-  background-color: #ecebe4;
+  background-color: #e4dccb;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
@@ -1362,9 +1387,11 @@ section + section {
 }
 .sc-signature .group-title .column-right .sub-title {
   display: block;
-  width: 50vw;
+  width: 52vw;
   font-size: 3vw;
   line-height: 1.3;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
+  font-weight: 800;
 }
 .sc-signature .group-slide {
   border-top: 1px solid #c6c0ba;
@@ -1386,7 +1413,7 @@ section + section {
   justify-content: space-between;
   width: 74.516%;
   padding: 0 30px;
-  background-color: #fbf4e4;
+  background-color: #f9f9f9;
   border-left: 1px solid #c6c0ba;
 }
 .sc-signature .slide2 .txt-tit {
@@ -1406,6 +1433,7 @@ section + section {
 .sc-signature .slide2 .desc {
   font-weight: 300;
   font-size: 1.7vw;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-signature .slide2 .thumb-box {
   width: 45.273%;
@@ -1501,10 +1529,12 @@ section + section {
   font-size: 1.2vw;
   line-height: 1.3;
   margin-top: 10px;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 
 .sc-season .group-title {
   margin-bottom: 50px;
+  color: #963717;
 }
 .sc-season .group-list {
   display: flex;
@@ -1577,14 +1607,15 @@ section + section {
   border-bottom: none;
 }
 .sc-season .group-list .column-right .txt-tit {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   line-height: 24px;
+  color: #605348;
 }
 .sc-season .group-list .column-right .desc {
   display: block;
   margin-top: 10px;
-  font-size: 1.1vw;
-  font-weight: 300;
+  font-size: 1vw;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
   color: #7c7267;
 }
 
@@ -1629,22 +1660,24 @@ section + section {
   position: relative;
   width: 28vw;
   height: 40vw;
-  background-color: #dad7d0;
+  background-color: #fff;
 }
 .sc-story .slide3 .txt-box {
   padding: 2vw;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-story .slide3 .txt-tit {
   display: block;
+  margin-bottom: 10px;
   font-size: 1.7vw;
   line-height: 1.4;
   text-transform: uppercase;
-  margin-bottom: 10px;
   word-break: break-all;
+  color: #222;
 }
 .sc-story .slide3 .desc {
   font-size: 1.1vw;
-  font-weight: 300;
+  color: #444;
 }
 
 .sc-location .group-title {
@@ -1656,36 +1689,37 @@ section + section {
   flex-direction: column;
   justify-content: space-between;
 }
-.sc-location .group-title .station-box {
+.sc-location .group-title .msg-box {
   display: flex;
   align-items: center;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
-.sc-location .group-title .station-box::before {
+.sc-location .group-title .msg-box::before {
   content: "";
   display: inline-block;
   vertical-align: top;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   margin-right: 20px;
-  background-image: url(../images/ic-coffee.png);
+  background-image: url(../images/ic-location.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
-.sc-location .group-title .station-box > * {
+.sc-location .group-title .msg-box > * {
   display: block;
 }
-.sc-location .group-title .station-box .txt-wrap {
+.sc-location .group-title .msg-box .txt-wrap {
   display: flex;
   flex-direction: column;
 }
-.sc-location .group-title .station-box em {
+.sc-location .group-title .msg-box em {
   font-size: 1.3vw;
   line-height: 19px;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-.sc-location .group-title .station-box span {
+.sc-location .group-title .msg-box span {
   font-size: 1.2vw;
   line-height: 17px;
   opacity: 0.8;
@@ -1693,13 +1727,20 @@ section + section {
 .sc-location .group-title .sub-title {
   display: inline-block;
   text-align: right;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
+  font-weight: 800;
+  color: #eb5b29;
 }
 .sc-location .group-title .sub-title span {
   display: block;
 }
+.sc-location .group-title .sub-title span:last-of-type {
+  margin-top: 12px;
+}
 .sc-location .group-list {
   display: flex;
   margin-top: 80px;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
 }
 .sc-location .group-list .column-left {
   width: 55%;
@@ -1724,9 +1765,11 @@ section + section {
   display: block;
 }
 .sc-location .group-list .info-tit {
+  margin-bottom: 8px;
   font-size: 1.7vw;
   line-height: 29px;
-  margin-bottom: 8px;
+  font-weight: 700;
+  color: #222;
 }
 .sc-location .group-list .info-txt {
   font-size: 1.2vw;
@@ -1790,32 +1833,30 @@ section + section {
   top: 100px;
   width: 70%;
   word-break: keep-all;
-  font-weight: 300;
   font-size: 1.2vw;
   line-height: 1.3;
 }
 .sc-location .group-contact {
   height: 30vh;
   margin-top: 140px;
-  background-color: #dad7d0;
+  background-color: #2a31a0;
+  color: #fff;
+  background-image: url(../images/location-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .sc-location .title-box {
   font-size: 3vw;
   line-height: 1.2;
 }
 .sc-location .title-box .contact-tit {
+  font-family: "NEXONLv1GothicRegular", sans-serif;
   display: block;
+  font-weight: 700;
 }
 .sc-location .title-box .contact-tit:last-of-type {
   display: inline-block;
-}
-.sc-location .title-box p {
-  display: inline-block;
-  font-size: 1.2vw;
-  font-weight: 300;
-}
-.sc-location .title-box p span {
-  display: block;
 }
 .sc-location .input-area {
   display: flex;
@@ -1836,7 +1877,7 @@ section + section {
   position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #c6c0ba;
+  border-bottom: 1px solid #fff;
 }
 .sc-location .selection {
   display: flex;
@@ -1886,6 +1927,7 @@ section + section {
   font-size: 1vw;
   padding: 5px 0;
   background-color: #fff;
+  color: #222;
   border: 1px solid #eee;
   border-radius: 7px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
@@ -1972,22 +2014,22 @@ section + section {
   height: 52px;
 }
 .sc-location input::-moz-placeholder {
-  color: #c6c0ba;
+  color: #fff;
 }
 .sc-location input:-ms-input-placeholder {
-  color: #c6c0ba;
+  color: #fff;
 }
 .sc-location input::placeholder {
-  color: #c6c0ba;
+  color: #fff;
 }
 .sc-location .contact-msg {
   margin-top: 20px;
-  color: #9d958c;
+  color: #fff;
   font-size: 1vw;
-  font-weight: 300;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sc-location .contact-msg span {
-  color: #5f5348;
+  font-weight: 700;
 }
 
 .sc-global {
@@ -1997,6 +2039,8 @@ section + section {
   position: relative;
   height: 120px;
   margin-bottom: 200px;
+  font-family: "CooperBlackStd", sans-serif;
+  color: #2a31a0;
 }
 .sc-global .group-ani .tit-ani {
   position: absolute;
@@ -2020,6 +2064,11 @@ section + section {
 .sc-global .group-tab .sub-title {
   font-size: 3vw;
   line-height: 1.3;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
+  font-weight: 800;
+}
+.sc-global .group-tab .sub-title span {
+  font-family: "Goldplay-SemiBold", sans-serif;
 }
 .sc-global .group-tab .tab-list {
   display: flex;
@@ -2029,7 +2078,7 @@ section + section {
 .sc-global .group-tab .btn-tab {
   display: inline-block;
   padding: 12px 22px;
-  background-color: #ecebe4;
+  background-color: #f9f9f9;
   border: 1px solid #c6c0ba;
   border-radius: 30px;
   text-transform: uppercase;
@@ -2038,7 +2087,8 @@ section + section {
   margin-left: 10px;
 }
 .sc-global .group-tab .btn-tab.active {
-  background-color: #605348;
+  background-color: #222;
+  border: 1px solid transparent;
   color: #fff;
 }
 .sc-global .group-tab .tab-content {
@@ -2173,23 +2223,20 @@ section + section {
 }
 .sc-partner .group-title {
   display: flex;
-  margin-bottom: 30px;
+  justify-content: space-between;
 }
 .sc-partner .group-title .sc-title {
   width: 25%;
 }
 .sc-partner .group-title .sub-title {
   width: 75%;
-}
-.sc-partner .group-title .sub-title span {
-  display: block;
-}
-.sc-partner .group-title .sub-title span:last-of-type {
-  margin-left: 150px;
+  font-family: "CooperBlackStd", sans-serif;
+  text-align: right;
 }
 .sc-partner .group-inquiry {
   display: flex;
   justify-content: space-between;
+  margin-top: 80px;
   height: 40vw;
 }
 .sc-partner .group-inquiry .column-left {
@@ -2206,6 +2253,10 @@ section + section {
   justify-content: center;
   height: 50%;
   font-size: 1.8vw;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
+}
+.sc-partner .group-inquiry .inquiry-item span {
+  font-weight: 800;
 }
 .sc-partner .group-inquiry .inquiry-link {
   position: relative;
@@ -2236,19 +2287,24 @@ section + section {
 .sc-partner .group-inquiry .inquiry-link span:first-of-type {
   margin-right: 20px;
 }
+.sc-partner .group-inquiry .link-more {
+  font-family: "Goldplay-SemiBold", sans-serif;
+}
 .sc-partner .group-inquiry .column-right {
   width: 40%;
 }
 .sc-partner .group-inquiry .contact-area {
   height: 100%;
   padding: 3vw;
-  background-color: #dad7d0;
+  background-color: #2a31a0;
+  color: #fff;
 }
 .sc-partner .group-inquiry .contact-area .contact-tit {
   display: block;
   margin-bottom: 40px;
   font-size: 1.6vw;
   line-height: 1.3;
+  font-family: "NEXONLv1GothicRegular", sans-serif;
   letter-spacing: 0.5px;
 }
 .sc-partner .group-inquiry .contact-area .input-wrap {
@@ -2276,14 +2332,15 @@ section + section {
   height: 47px;
   height: 5vw;
   background-color: transparent;
-  border-bottom: 1px solid #c6c0ba;
+  border-bottom: 1px solid #fff;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sc-partner .group-inquiry .contact-area .select-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   margin-top: 30px;
-  border-bottom: 1px solid #c6c0ba;
+  border-bottom: 1px solid #fff;
 }
 .sc-partner .group-inquiry .contact-area .selection {
   display: flex;
@@ -2333,6 +2390,7 @@ section + section {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #fff;
+  color: #222;
   border: 1px solid #eee;
   border-radius: 7px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
@@ -2412,10 +2470,10 @@ section + section {
 }
 .sc-partner .group-inquiry .contact-area .contact-msg {
   margin-top: 20px;
-  color: #9d958c;
+  color: #fff;
   font-size: 1.1vw;
-  font-weight: 300;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sc-partner .group-inquiry .contact-area .contact-msg span {
-  color: #5f5348;
+  font-weight: 700;
 }

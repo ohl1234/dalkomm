@@ -88,6 +88,7 @@
         }
         .link-btn{
             width: 50%;
+            font-family: $font-kn2;
             &::after{
                 content: '';
                 display: inline-block;
@@ -115,6 +116,7 @@
             .txt{
                 width: 30vw;
                 font-size: 1.6vw;
+                font-family: $font-kn2;
                 letter-spacing: -0.5px;
                 background-position: center center;
                 border-color: transparent;

@@ -32,7 +32,7 @@
     color: $color-white;
     line-height: 1.55;
     border-radius: 30px;
-    background-color: $color-brown;
+    background-color: $color-txt;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
@@ -55,9 +55,9 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: $color-blue;
+    color: $color-txt;
     border-radius: 30px;
-    background-color: $color-beige2;
+    background-color: $color-white;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
@@ -65,4 +65,3 @@
     transition-delay: 0.2s;
     transition-duration: 3s;
 }
-
