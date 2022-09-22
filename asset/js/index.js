@@ -2,6 +2,7 @@ $(function(){
     document.cookie = "safeCookie1=foo; SameSite=Lax"; 
     document.cookie = "safeCookie2=foo"; 
     document.cookie = "crossCookie=bar; SameSite=None; Secure";
+    
     /**
      *  1. header event
      *  1-1. 스크롤 시 sticky header
@@ -228,9 +229,9 @@ $(function(){
 
     $('.sc-location .location-wrap').click(function(e){
         e.preventDefault();
-        target = $(this).data('target');
 
-        $('[data-id='+target+']').addClass('active').siblings().removeClass('active')
+        href = $(this).attr('href');
+        $('.map-iframe').attr('src',href);
     })
 
 

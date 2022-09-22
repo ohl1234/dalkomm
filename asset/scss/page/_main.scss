@@ -682,8 +682,7 @@
                 margin-top: 30px;
             }
             &.map {
-                position: relative;
-                padding-top: 50%;
+                height: 400px;
             }
         }
         .location-wrap {
@@ -743,20 +742,11 @@
             }
         }
         .map-box{
-            position: absolute;
-            top: 0;
-            left: 0;
             display: block;
             width: 100%;
             height: 100%;
-            &.active {
-                .map-iframe {
-                    display: block;
-                }
-            }
         }
         .map-iframe {
-            display: none;
             width: 100%;
             height: 100%;
         }
@@ -765,7 +755,7 @@
             padding-left: 30px;
             .desc{
                 position: sticky;
-                top: 100px;
+                top: 7vw;
                 width: 70%;
                 word-break: keep-all;
                 font-size: 1.2vw;
